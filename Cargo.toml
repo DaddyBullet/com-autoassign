@@ -1,0 +1,18 @@
+[package]
+name = "com-autoassign-service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.0"
+
+[dependencies.windows]
+version = "0.44"
+features = [
+    "Devices_Enumeration",
+    "Foundation_Collections",
+    "Win32_Devices_DeviceAndDriverInstallation",
+    "Win32_Foundation",
+]
